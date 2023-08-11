@@ -4,7 +4,7 @@ export default function ExperienceCard(props) {
   return (
     <div className="experience-card">
       <div className="experience-card-header">
-        <img src={props.img} alt="logo image" />
+        <img src={props.img} alt={props.company} />
         <h2 className="experience-company">{props.company}</h2>
         <h2 className="experience-role">{props.role}</h2>
       </div>

@@ -6,6 +6,7 @@
   flex-direction: column;
   margin: 0px;
   font-family: "Montserrat";
+  height: 100vh;
 }
 .experience-card:hover {
   transform: scale(1.02);

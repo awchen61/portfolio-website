@@ -8,12 +8,11 @@ import {
   faGithub,
 } from "@fortawesome/free-brands-svg-icons";
 import { faUser } from "@fortawesome/free-regular-svg-icons";
-
-function Contact() {
+import "../Style/contact.css";
+const Contact = () => {
   return (
-    <div>
+    <div id="contact-section">
       <SectionHeader header_text="Get in touch!"></SectionHeader>
-
       <p>
         I’m always open for any new opportunities. Whether you have a question
         or just want to say hi, I'm just a click away!
@@ -21,10 +20,30 @@ function Contact() {
 
       <div className="contact-form">
         <form>
-          <input type="text" placeholder="Name"></input>
-          <input type="text" placeholder="Email"></input>
-          <input type="text" placeholder="Enter Your Message"></input>
-          <input type="submit" value="Send"></input>
+          <ul>
+            <li className="half-input">
+              <input type="text" placeholder="Name" required></input>
+            </li>
+            <li className="half-input">
+              <input type="text" placeholder="Email" required></input>
+            </li>
+            <li>
+              {" "}
+              <input type="text" placeholder="Subject" required></input>
+            </li>
+            <li>
+              {" "}
+              <input
+                type="text"
+                placeholder="Enter Your Message"
+                required
+              ></input>
+            </li>
+            <li>
+              {" "}
+              <input type="submit" value="Send"></input>
+            </li>
+          </ul>
         </form>
       </div>
 
@@ -44,6 +63,5 @@ function Contact() {
       </div>
     </div>
   );
-}
-
+};
 export default Contact;

@@ -3,20 +3,26 @@ import { Link } from "react-scroll";
 import "../Style/nav.css";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { useRef } from "react";
+import { pageRoutes } from "../Routes/routes.js";
 
-export default function Navbar() {
+const Navbar = () => {
   const navRef = useRef();
   const showNavBar = () => {
     navRef.current.classList.toggle("responsive_nav");
   };
+
+  const routes = React.useMemo(() => {
+    return pageRoutes.map((route) => (
+      <Link to={route.path} spy={true} smooth={true} offset={0} duration={500}>
+        {route.title}
+      </Link>
+    ));
+  }, []);
+
   return (
-    <header>
-      <h3>AC</h3>
-      <nav ref={navRef}>
-        <a href="/#">About</a>
-        <a href="/#">Experience</a>
-        <a href="/#">Projects</a>
-        <a href="/#">Contact</a>
+    <header className="nav-bar">
+      <nav href={navRef}>
+        {routes}
         <button className="nav-btn nav-close-btn" onClick={showNavBar}>
           <FaTimes />
         </button>
@@ -26,4 +32,5 @@ export default function Navbar() {
       </button>
     </header>
   );
-}
+};
+export default Navbar;

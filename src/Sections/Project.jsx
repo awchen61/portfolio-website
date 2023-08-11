@@ -3,9 +3,9 @@ import SectionHeader from "../Components/SectionHeader.jsx";
 
 import ProjectCard from "../Components/ProjectCard.jsx";
 
-function Projects() {
+const Projects = () => {
   return (
-    <div>
+    <div id="projects-section">
       <SectionHeader header_text="Projects" />
       <ProjectCard title="Portfolio Website" description="cool stuff" />
       <ProjectCard title="Instagram Clone" description="cool stuff" />
@@ -13,6 +13,6 @@ function Projects() {
       <ProjectCard title="Budget Tracker App" description="cool stuff" />
     </div>
   );
-}
+};
 
 export default Projects;

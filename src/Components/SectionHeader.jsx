@@ -1,7 +1,7 @@
 import "../Style/section-header.css";
 import React from "react";
 
-export default function SectionHeader(props) {
+const SectionHeader = (props) => {
   return (
     <div>
       <h1 className="section-header">
@@ -9,4 +9,5 @@ export default function SectionHeader(props) {
       </h1>
     </div>
   );
-}
+};
+export default SectionHeader;

@@ -1,16 +1,31 @@
 import React from "react";
 import SectionHeader from "../Components/SectionHeader.jsx";
-function About() {
+import TechnicalSkills from "../Components/TechnicalSkills.jsx";
+
+import "../Style/about.css";
+const About = () => {
   return (
-    <div>
-      <SectionHeader header_text="About"></SectionHeader>
-      <p>
-        I am a current junior studying Computer Science at the University of
-        Michigan. I am passionate about personal growth and seeking out
-        impactful SWE opportunities.
-      </p>
+    <div className="about-section">
+      <div className="about-container">
+        <div className="about-top-section">
+          <SectionHeader header_text="About Me" />
+          <p>
+            Software engineer with 4+ years of hands-on development experience,
+            specializing in creating engaging, user-friendly web experiences. I
+            excel in leading frontend development projects, optimizing user
+            interfaces, and implementing innovative solutions that seamlessly
+            align with corporate goals. Leveraging my expertise in C#,
+            JavaScript, React, and other modern frameworks, I deliver dynamic
+            and visually appealing web applications. Let's connect and
+            collaborate to create exceptional digital experiences together.
+          </p>
+        </div>
+        <div className="about-bottom-section">
+          <h4>Technical Skills | </h4>
+          <TechnicalSkills />
+        </div>
+      </div>
     </div>
   );
-}
-
+};
 export default About;

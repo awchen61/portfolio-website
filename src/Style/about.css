@@ -1,0 +1,41 @@
+.about-section {
+  height: 100vh;
+  background-color: black;
+  display: flex;
+}
+.about-container {
+  margin: auto;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.about-top-section {
+  margin: auto;
+  text-align: center;
+  width: 50%;
+}
+
+.about-bottom-section {
+  margin: auto;
+  width: 75%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.skills-title {
+}
+
+.skills-section {
+}
+.skills-logo {
+  width: 50px;
+  height: 50px;
+  margin: 2px;
+}
+.skills-logo:hover span {
+  transform: scale(1.25);
+}
