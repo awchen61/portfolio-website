@@ -31,6 +31,7 @@
 
 .skills-section {
 }
+
 .skills-logo {
   width: 50px;
   height: 50px;
@@ -38,4 +39,8 @@
 }
 .skills-logo:hover span {
   transform: scale(1.25);
+}
+
+.about-container p {
+  text-align: justify;
 }

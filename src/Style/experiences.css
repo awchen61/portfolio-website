@@ -1,3 +1,10 @@
+.experience-section {
+  height: 100vh;
+  background-color: black;
+  display: flex;
+}
+
+/* styling for experience cards */
 .experience-card {
   background-color: #fafafa;
   border-radius: 15px;

@@ -5,7 +5,7 @@ import { experienceInfo } from "../Info/experiences.js";
 import "../Style/experiences.css";
 const Experience = () => {
   return (
-    <div id="experience-section">
+    <div className="experience-section">
       <SectionHeader header_text="Experience"></SectionHeader>
       {experienceInfo.map((exp) => {
         return (

@@ -5,11 +5,11 @@ import ProjectCard from "../Components/ProjectCard.jsx";
 
 const Projects = () => {
   return (
-    <div id="projects-section">
+    <div className="projects-section">
       <SectionHeader header_text="Projects" />
       <ProjectCard title="Portfolio Website" description="cool stuff" />
+      <ProjectCard title="FrequencEase" description="cool stuff" />
       <ProjectCard title="Instagram Clone" description="cool stuff" />
-      <ProjectCard title="Chirp" description="cool stuff" />
       <ProjectCard title="Budget Tracker App" description="cool stuff" />
     </div>
   );
