@@ -3,21 +3,41 @@
   background-color: black;
   display: flex;
 }
+.projects-container {
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+}
+
+.projects-grid {
+  margin: 20px auto;
+  display: grid;
+  grid-template-columns: 400px 400px;
+  grid-row: auto auto;
+  grid-column-gap: 30px;
+  grid-row-gap: 30px;
+}
+
 /* styling for project card */
 .project-card {
   background-color: #fafafa;
   border-radius: 15px;
-  width: 60%;
   display: flex;
   flex-direction: column;
-  margin: 0px;
-  font-family: "Montserrat";
-  height: 100vh;
+  padding: 10px;
 }
 .project-card:hover {
-  transform: scale(1.02);
+  transform: scale(1.05);
+}
+.project-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 .project-title {
-  font-size: 20px;
+  font-size: 30px;
   font-weight: 600;
 }

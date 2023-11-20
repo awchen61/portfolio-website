@@ -1,10 +1,10 @@
-.contact-container {
+.contact-section {
   height: 100vh;
   background-color: black;
   display: flex;
 }
 
-.contact-section {
+.contact-container {
   margin: auto;
   color: white;
   justify-content: center;

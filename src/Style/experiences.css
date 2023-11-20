@@ -3,21 +3,52 @@
   background-color: black;
   display: flex;
 }
-
+.experience-container {
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+}
+.experience-timeline {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
 /* styling for experience cards */
 .experience-card {
   background-color: #fafafa;
   border-radius: 15px;
-  width: 60%;
+  width: 500px;
   display: flex;
   flex-direction: column;
   margin: 0px;
-  font-family: "Montserrat";
-  height: 100vh;
+  padding: 10px;
 }
 .experience-card:hover {
   transform: scale(1.02);
 }
 .experience-card img {
   height: 100px;
+}
+
+.experience-card:nth-child(even) {
+  justify-content: flex-end;
+}
+
+.experience-card:nth-child(odd) {
+  justify-content: flex-start;
+}
+
+.experience-line {
+  width: 2px;
+  height: 100%;
+  background-color: white;
+  position: absolute; /* Removed absolute positioning */
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%);
+  z-index: -1;
 }

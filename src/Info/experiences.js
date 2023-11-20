@@ -4,7 +4,7 @@ import juni_logo from "../Uploads/juni-learning.png";
 import mich_logo from "../Uploads/urop.jpeg";
 import dd_logo from "../Uploads/datadog.png";
 
-export const experienceInfo = [
+export const experiences = [
   {
     img: dd_logo,
     company: "Datadog",

@@ -35,8 +35,8 @@ const Contact = () => {
   };
 
   return (
-    <div className="contact-container">
-      <div className="contact-section">
+    <div className="contact-section">
+      <div className="contact-container">
         <SectionHeader header_text="Get in touch!"></SectionHeader>
         <p>
           I’m always open for any new opportunities. Whether you have a question

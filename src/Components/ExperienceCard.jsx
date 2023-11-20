@@ -3,7 +3,7 @@ import "../Style/experiences.css";
 
 export default function ExperienceCard(props) {
   return (
-    <div className="experience-card">
+    <div className="experience-card" key={props.index}>
       <div className="experience-card-header">
         <img src={props.img} alt={props.company} />
         <h2 className="experience-company">{props.company}</h2>

@@ -1,6 +1,6 @@
 import React from "react";
 import SectionHeader from "../Components/SectionHeader.jsx";
-import TechnicalSkills from "../Components/TechnicalSkills.jsx";
+import { skills } from "../Info/skills.js";
 
 import "../Style/about.css";
 const About = () => {
@@ -32,7 +32,16 @@ const About = () => {
         </div>
         <div className="about-bottom-section">
           <h2>Technical Skills | </h2>
-          <TechnicalSkills />
+          {skills.map((skill) => {
+            return (
+              <img
+                src={skill.logo}
+                alt={skill.name}
+                className={"skills-logo"}
+                width={10}
+              />
+            );
+          })}
         </div>
       </div>
     </div>
